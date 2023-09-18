@@ -1,0 +1,65 @@
+//creare a node.js in app.js
+
+const express=require ("express);
+const app=express(;
+//middleware
+app.use(express.json());
+app.listem(3001)=>{
+console.log("server os rimmomg pprt 3001");
+{0;
+module.exports=app;
+
+npm i express mongoose
+
+once the installation is done,open the package.json file and modify the scripts with the following configuraiton
+
+
+built a model
+
+
+
+create a services
+
+const BlogModel = require("./models/Blog");
+
+exports.getAllBlogs = async () => {
+  return await BlogModel.find();
+};
+
+exports.createBlog = async (blog) => {
+  return await BlogModel.create(blog);
+};
+
+exports.getBlogById = async (id) => {
+  return await BlogModel.findById(id);
+};
+
+exports.updateBlog = async (id, blog) => {
+  return await BlogModel.findByIdAndUpdate(id, blog);
+};
+
+
+exports.deleteBlog = async (id) => {
+  return await BlogModel.findByIdAndDelete(id);
+};
+
+BLOG CONTROLLER:
+
+
+const blogService=require("../services/BlogService");
+exports.getAllBlogs=async(req,res)
+=>{
+try}
+constblogs=await blogService.getAllBlogs();
+res.json({data:blog,status:"success"
+}catch(err){
+res.status(500).json({error:errmessage});
+}
+};
+exports.createBlog=async(reg,res)=>{
+try{
+constblog=awaitblogService.creatBlog(req.body);
+res.json){data:blog,status:"success"
+catch(err){
+res.status(500).json({errror:err.message}}
+};
